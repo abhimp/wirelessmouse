@@ -1,20 +1,3 @@
-// function sendCommand(cmd, cb){
-// 	$.ajax({
-//         url: "/",
-//         type: 'POST',
-//         data: cmd,
-//         dataType: 'text',
-//         success: function(result) {
-//             // alert("success?");
-//             // console.log(cb)
-//             setTimeout(cb, 50)
-//         },
-//         error: function(){
-//             cb()
-//         }
-//     });
-// }
-
 function sendCommand(cmd, cb) {
     xhr = new XMLHttpRequest();
     xhr.open('POST', '/');
